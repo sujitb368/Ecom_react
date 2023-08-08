@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  /* --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important; */
+
+}
+.nav-item .active{
+  background-color: #ebebeb;
+  border-radius: 2px;
+  color:red !important;
+
+}
+
+/* ------------------////////// FOOTER //////////-------------- */
+.footer {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+
+}
+.footer a {
+  text-decoration: none;
+  color:#fff;
+  padding: 5px;
+  
+}
+.footer a:hover{
+  background-color: #ebebeb;
+  border-radius: 2px;
+  color:red !important;
+  margin-right: 3px;
+  margin-left: 3px;
+  
+}
+
+.pnf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 65vh;
+}
+.pnf-msg{
+  font-weight: bold;
+}
+.pnf-button{
+  text-decoration: none !important;
+  color:#fff !important;
+}
+
+.product-img{
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
