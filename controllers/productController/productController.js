@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 
 const cretateProductController = async (req, res) => {
   try {
-    const { name, slug, description, price, category, shipping, quantity } =
+    const { name, description, price, category, shipping, quantity } =
       req.fields;
     const { photo } = req.files;
 

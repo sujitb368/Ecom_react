@@ -56,9 +56,16 @@ function Home() {
     }
   };
   useEffect(() => {
-    getAllProducts();
     getAllCategory();
   }, []);
+
+  useEffect(() => {
+    if (!checked.length || !radio.length) getAllProducts();
+  }, [checked.length, radio.length]);
+
+  useEffect(() => {
+    if (checked.length || radio.length) filterProduct();
+  }, [checked, radio]);
   return (
     <>
       <Layout title={"All Product - Best Offers"}>

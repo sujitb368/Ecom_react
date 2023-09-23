@@ -7,11 +7,7 @@ const ProductModel = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    slug: {
-      type: String,
-      required: true,
-      trim: true,
-    },
+
     description: {
       type: String,
       required: true,

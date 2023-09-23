@@ -31,7 +31,7 @@ const isAdmin = async (req, res, next) => {
     }
   } catch (error) {
     console.log(`error in isAdmin middleware ${error}`.bgRed.white);
-    return res.status(401).send({
+    return res.status(500).send({
       message: "error in isAdmin middleware",
       error,
       success: false,
